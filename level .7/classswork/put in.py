@@ -1,0 +1,5 @@
+name = input("enter neme: ")
+last_name = input("enter last name: ")
+yeu_favorit_color = input("enter yeu favorit color: ")
+age = input(str("age"))
+print("helo me name is  " + name + "  my last neme is " + last_name + " also my favorit color is " + yeu_favorit_color + " end my age is " + str(age)) 
