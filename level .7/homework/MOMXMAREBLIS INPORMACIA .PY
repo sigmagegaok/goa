@@ -1,0 +1,7 @@
+name=input("name: ")
+last_name=input("lastname: ")
+age=input (str("age: "))
+country=input("country: ")
+favorite_car=input("favorite car: ")
+favorite_color=input("favorite_color: ")
+print("hi my name  is " + name + " end my last name is " + last_name + " end my age is " +age + " also my country is " + country + " end me favorite car is " + favorite_car + " also my favorite color is " + favorite_color)
