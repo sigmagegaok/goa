@@ -1,0 +1,6 @@
+x=input("eneter string:")
+print(type(x))
+wew=input("eneter intager:")
+print(type(12))
+are=input("eneter float:")
+print(type(12.0))
