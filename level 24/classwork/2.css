@@ -1,0 +1,14 @@
+
+.lorem-text {
+    font-size: 18px;
+    
+    color: #333333; 
+
+    text-align: justify; 
+
+    background-color: #f4f4f4;
+
+    padding: 10px; 
+
+    border-radius: 8px; 
+}
