@@ -14,3 +14,8 @@ elif buls >  60:
 
 elif buls >= 60:
     print("yeu heve F")
+
+
+
+
+
