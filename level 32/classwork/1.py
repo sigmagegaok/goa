@@ -1,0 +1,1 @@
+print("no classwork we do code wars")
