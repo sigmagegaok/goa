@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+.container {
+    margin-top: 60px;
+    padding: 20px;
+}
+.section {
+    padding: 50px;
+    border: 1px solid #ddd;
+    margin: 20px;
+}
+.relative-box {
+    position: relative;
+    left: 20px;
+    top: 20px;
+    padding: 20px;
+    background-color: lightblue;
+}
+.absolute-box {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    padding: 20px;
+    background-color: lightcoral;
+}
+.sticky-box {
+    position: sticky;
+    top: 10px;
+    padding: 20px;
+    background-color: lightgreen;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
