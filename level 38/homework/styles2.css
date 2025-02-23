@@ -1,0 +1,73 @@
+/* 1. Flexbox with vendor prefixes */
+.flexbox {
+    display: -webkit-box;  /* Safari & old iOS */
+    display: -moz-box;     /* Firefox */
+    display: -ms-flexbox;  /* IE */
+    display: -webkit-flex; /* Chrome & Safari */
+    display: flex;
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 2. Gradient Background */
+.gradient {
+    background: -webkit-linear-gradient(left, red, blue); /* Safari, Chrome */
+    background: -moz-linear-gradient(left, red, blue);    /* Firefox */
+    background: -o-linear-gradient(left, red, blue);      /* Opera */
+    background: linear-gradient(to right, red, blue);     /* Standard */
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+/* 3. Box Shadow */
+.box-shadow {
+    -webkit-box-shadow: 10px 10px 5px grey; /* Safari, Chrome */
+    -moz-box-shadow: 10px 10px 5px grey;    /* Firefox */
+    box-shadow: 10px 10px 5px grey;         /* Standard */
+    padding: 20px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+/* 4. Transition */
+.transition {
+    background-color: lightcoral;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out; /* Safari */
+    -moz-transition: all 0.5s ease-in-out;    /* Firefox */
+}
+
+.transition:hover {
+    background-color: darkred;
+    color: white;
+}
+
+/* 5. CSS Animation */
+@-webkit-keyframes exampleAnimation {
+    from {transform: scale(1);}
+    to {transform: scale(1.2);}
+}
+
+@-moz-keyframes exampleAnimation {
+    from {transform: scale(1);}
+    to {transform: scale(1.2);}
+}
+
+@keyframes exampleAnimation {
+    from {transform: scale(1);}
+    to {transform: scale(1.2);}
+}
+
+.animation {
+    display: inline-block;
+    background-color: lightseagreen;
+    padding: 20px;
+    text-align: center;
+    -webkit-animation: exampleAnimation 1s infinite alternate;
+    -moz-animation: exampleAnimation 1s infinite alternate;
+    animation: exampleAnimation 1s infinite alternate;
+}
