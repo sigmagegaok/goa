@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+    background-color: #f4f4f4;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Scale Example */
+.box.scale:hover {
+    transform: scale(1.5);
+}
+
+/* Rotate Example */
+.box.rotate:hover {
+    transform: rotate(45deg);
+}
+
+/* Skew Example */
+.box.skew:hover {
+    transform: skew(20deg);
+}
