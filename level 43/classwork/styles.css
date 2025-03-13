@@ -1,0 +1,53 @@
+:root {
+    --main-color: #3498db;
+    --bg-color: #f4f4f4;
+    --font-size-large: 24px;
+    --letter-space: 2px;
+    --padding-size: 10px;
+    --margin-size: 15px;
+}
+
+.element1 {
+    color: var(--main-color);
+    background-color: var(--bg-color);
+    font-size: var(--font-size-large);
+    letter-spacing: var(--letter-space);
+    display: inline;
+    padding: var(--padding-size);
+    margin: var(--margin-size);
+}
+
+.element2 {
+    color: white;
+    background-color: black;
+    font-size: calc(var(--font-size-large) - 4px);
+    display: block;
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+    transform: rotate(5deg);
+    transition: transform 0.5s;
+}
+
+.element2:hover {
+    transform: rotate(-5deg);
+}
+
+.element3 {
+    color: #2ecc71;
+    background-color: #ecf0f1;
+    font-size: var(--font-size-large);
+    display: inline-block;
+    padding: var(--padding-size);
+    margin: var(--margin-size);
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    transform: scale(1.1);
+    transition: background-color 0.3s;
+}
+
+.element3:hover {
+    background-color: #27ae60;
+}
+
