@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Result Card */
+.result-card {
+    background: linear-gradient(to bottom, #6a5ae0, #4e36d0);
+    color: white;
+    padding: 30px;
+    width: 220px;
+    text-align: center;
+    border-radius: 20px 0 0 20px;
+}
+
+.result-title {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+.score-circle {
+    background: rgba(255, 255, 255, 0.1);
+    width: 100px;
+    height: 100px;
+    margin: 15px auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.score {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.total {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.status {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.description {
+    font-size: 12px;
+    opacity: 0.8;
+    margin-top: 5px;
+}
+
+/* Summary Card */
+.summary-card {
+    padding: 30px;
+    width: 220px;
+}
+
+h3 {
+    margin-bottom: 15px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Category Colors */
+.reaction {
+    background: #ffe6e6;
+    color: #d9534f;
+}
+
+.memory {
+    background: #fff4cc;
+    color: #f0ad4e;
+}
+
+.verbal {
+    background: #e6fff4;
+    color: #5bc0de;
+}
+
+.visual {
+    background: #e6e6ff;
+    color: #5d5bc0;
+}
+
+/* Button */
+.continue-btn {
+    width: 100%;
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.continue-btn:hover {
+    background: #555;
+}
