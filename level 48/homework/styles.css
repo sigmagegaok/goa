@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+.container {
+    display: grid;
+    width: 90vw;
+    height: 90vh;
+    gap: 5px;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr;
+}
+
+.container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+}
+
+/* Header */
+.header {
+    background-color: green;
+    grid-column: 2/ 4;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: green;
+    grid-row: 1 / 4;
+}
+
+/* Section 1 */
+.sect1 {
+    background-color: red;
+    grid-column: 4;
+    grid-row: 1 / 2;
+}
+
+/* Section 2 */
+.sect2 {
+    background-color: orange;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+/* Section 3 */
+.sect3 {
+    background-color: red;
+    grid-column: 3;
+    grid-row: 2;
+}
+
+/* Section 4 */
+.sect4 {
+    background-color: red;
+    grid-column: 2;
+    grid-row: 3;
+}
+
+/* Section 5 */
+.sect5 {
+    background-color: orange;
+    grid-column: 3;
+    grid-row: 3;
+}
+
+/* Navigation */
+.navigation {
+    background-color: green;
+    grid-column: 4;
+    grid-row: 2 / 4;
+}

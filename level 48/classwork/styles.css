@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 80px 200px 1fr 80px;
+    grid-template-columns: 150px 1fr 1fr 1fr;
+    grid-template-areas:
+        "header header header header"
+        "aside sect1 sect2 sect3"
+        "aside content content content"
+        "footer footer footer footer";
+    height: 100vh;
+    gap: 5px;
+    background-color: #083c74;
+}
+
+header {
+    grid-area: header;
+    background: #89b4e8;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+aside {
+    grid-area: aside;
+    background: #0066d9;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.sect1 {
+    grid-area: sect1;
+    background: #b3d9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.sect2 {
+    grid-area: sect2;
+    background: #5f87a3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.sect3 {
+    grid-area: sect3;
+    background: #729fcf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+main {
+    grid-area: content;
+    background: #6a8caf;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+footer {
+    grid-area: footer;
+    background: #39648f;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
