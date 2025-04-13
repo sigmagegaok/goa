@@ -1,0 +1,191 @@
+/* ძირითადი სტილები */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: cursive;
+    background: #f7f7f7;
+    color: #333;
+  }
+  
+  /* Me SECTION */
+  .me {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 5rem 1rem;
+    animation: fadeInDown 1s ease-in-out;
+  }
+  
+  .me h1 {
+    font-size: 3rem;
+  }
+  
+  .me p {
+    font-size: 1.2rem;
+  }
+  
+  .me .btn {
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+    background: #00b894;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .me .btn:hover {
+    transform: scale(2.1);
+    background-color: #03735d;
+  }
+  
+  /* ABOUT SECTION */
+  #about {
+    padding: 2.5rem 2rem;
+    background: #fff;
+  }
+  
+
+  
+  .skills {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
+  
+  .skills li {
+    background: #eee;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    list-style: none;
+    transition: background 0.3s ease;
+  }
+  
+  .skills li:hover {
+    background: #00bfff;
+    color:rgb(255, 255, 255)
+  }
+  
+  /* PROJECTS */
+  #projects {
+    background: #f0f0f0;
+    padding: 3rem 2rem;
+  }
+  
+  .project-list {
+    display: grid;
+    gap: 2em;
+  }
+  
+  .project-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow:  5px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 3s ease forwards;
+  }
+  
+
+  
+  .project-card a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #00b894;
+    text-decoration: none;
+  }
+  
+  /* CONTACT SECTION */
+  #contact {
+    padding: 2.5rem 2rem;
+    background: #fff;
+  }
+  
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    animation: fadeIn 2s;
+  }
+  
+  form input, form textarea {
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  form button {
+    background: #00b894;
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  form button:hover {
+    background: #01977a;
+  }
+  
+  /* FOOTER */
+  footer {
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 1.5rem 1rem;
+  }
+  
+  footer a {
+    color: #00b894;
+    margin: 0 0.7rem;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  footer a:hover {
+    color: white;
+  }
+  
+  /* ANIMATIONS */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-40px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* RESPONSIVE DESIGN */
+  @media (max-width: 750px) {
+    .about-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .me h1 {
+      font-size: 2.2rem;
+    }
+  
+    .me p {
+      font-size: 1rem;
+    }
+  
+    .project-list {
+      grid-template-columns: 1fr;
+    }
+  }
+  
