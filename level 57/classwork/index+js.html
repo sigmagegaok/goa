@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Info Sentence</title>
+</head>
+<body>
+
+  <h2>Enter Your Information</h2>
+
+  <input type="text" id="firstName" placeholder="First Name">
+  <input type="text" id="lastName" placeholder="Last Name">
+  <input type="number" id="age" placeholder="Age">
+  <input type="text" id="location" placeholder="Place of Residence">
+  <input type="text" id="profession" placeholder="Profession">
+  <button onclick="generateSentence()">Submit</button>
+
+  <div id="output"></div>
+
+  <script>
+    function generateSentence() {
+      const firstName = document.getElementById("firstName").value;
+      const lastName = document.getElementById("lastName").value;
+      const age = document.getElementById("age").value;
+      const location = document.getElementById("location").value;
+      const profession = document.getElementById("profession").value;
+
+      const sentence = `Hello, my name is ${firstName} ${lastName}. I am ${age} years old. I live in ${location} and I work as a ${profession}.`;
+
+      document.getElementById("output").innerText = sentence;
+    }
+  </script>
+
+</body>
+</html>
